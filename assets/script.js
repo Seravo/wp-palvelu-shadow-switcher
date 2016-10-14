@@ -1,5 +1,5 @@
 (function(){
-  var links = document.querySelectorAll('#wp-admin-bar-wpis li > a')
+  var links = document.querySelectorAll('#wp-admin-bar-wpis li > a');
   for(var i = 0; i < links.length; i++){
     var element = links[i]; 
     element.addEventListener('click', function(e){
@@ -10,7 +10,7 @@
       } else {
         document.cookie = "wpp_shadow=" + instance + ";path=/";
       }
-      location.reload()
+      location.reload();
     });
   }
 })();
